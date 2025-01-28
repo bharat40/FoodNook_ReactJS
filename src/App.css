@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*header section styling starts from here (bharat dhiman)*/
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.header h1 {
+  font-size: 50px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo-f {
+  color: red;
+}
+
+.logo-n {
+  color: rgb(134, 203, 31);
+}
+
+
+
+.header ul li a:hover {
+  color: white;
+  background-color: green;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+/*header section styling ends here (bharat dhiman)*/
+
+/*header maedia query starts form here(bharat dhiman)*/
+
+@media (max-width: 1000px) {
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*header maedia query ends here (bharat dhiman)*/
+
+/*top section styling starts from here (bharat dhiman)*/
+.top-section {
+  background-image: url(./images/top-section-latest-image.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eat-right-food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  margin-left: 500px;
+  width: 700px;
+}
+
+.eat-right-food h1 {
+  display: flex;
+  font-size: 70px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nourish {
+  color:#ff9529;
+}
+
+.thrive {
+  color: blue;
+}
+
+.enjoy {
+  color: deeppink;
+}
+
+.nourish {
+  animation: animate1 1.2s alternate infinite;
+}
+
+.thrive {
+  animation: animate2 1.2s alternate infinite;
+}
+
+.enjoy {
+  animation: animate3 1.2s alternate infinite;
+}
+
+.about-link {
+  color: white;
+}
+
+@keyframes animate1 {
+  50% {
+    color: deeppink;
+  }
+}
+
+@keyframes animate2 {
+  50% {
+    color: orange;
+  }
+}
+
+@keyframes animate3 {
+  50% {
+    color: blueviolet;
+  }
+}
+
+.eat-right-food p {
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.eat-right-food button {
+  background-color: green;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 25px;
+  margin-top: 20px;
+  width: 130px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s linear 0ms;
+}
+
+.eat-right-food button:hover {
+  background-color: darkgreen;
+}
+
+.eat-right-food .love {
+  color: red;
+}
+
+.eat-right-food .food {
+  color: green;
+}
+
+.eat-right-food .soul {
+  color: purple;
+}
+
+/*top section styling ends here (bharat dhiman)*/
+
+/*top section media query starts from here (bharat dhiman)*/
+
+@media (max-width: 1000px) {
+  .eat-right-food h1 {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .eat-right-food p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .eat-right-food button {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .eat-right-food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    /* margin-left: 500px;
+    width: 700px; */
+  }
+}
+
+/*top section media query ends here (bharat dhiman)*/
+
+@media (min-width: 1001px) {
+  .header {
+    background-color: #fdfcfb;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.9;
+    /* border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+  }
+}
+
+/*about section styling starts from here (bharat dhiman)*/
+
+.about {
+  /* background-color: rgb(236, 236, 236); */
+  background-image: url("./images/about-bgimage.avif");
+  background-position: center;
+  height: 700px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.aboutus-left {
+  text-align: start;
+  height: 500px;
+  width: 550px;
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding-left: 30px;
+
+  /* box-shadow: inset -16px 0px 59px 57px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+  /* background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%); */
+  /* transition: all 0.7s linear 0ms; */
+  /* border-radius: 5px; */
+  /* cursor: zoom-in; */
+}
+
+.aboutus-left span {
+  font-size: 70px;
+  color: yellow;
+}
+
+/* .aboutus-left h1 {
+  font-size: 40px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.aboutus-left p {
+  font-size: 20px;
+  /* background-color: red; */
+  line-height: 40px;
+  color: yellow;
+  /* color: blue; */
+  /* padding: 2px; */
+  /* line-height: 30px;
+  font-family: "Freehand", cursive;
+  font-weight: 400;
+  font-style: normal; */
+  /* background-color: #eeadf2;
+  background-image: linear-gradient(
+    45deg,
+    #6cc947 0%,
+    #43d57b 52%,
+    #4ec581 90%
+  ); */
+}
+
+.aboutus-image-right img {
+  height: 400px;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*media query for about section starts from here (bharat dhiman)*/
+
+@media (max-width: 1000px) {
+  .about {
+    padding-top: 50px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /* .aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  } */
+
+  .aboutus-left {
+    width: 400px;
+  }
+
+  .aboutus-left span {
+    font-size: 40px;
+  }
+
+  .aboutus-left h1 {
+    font-size: 30px;
+  }
+
+  .aboutus-left p {
+    font-size: 20px;
+  }
+
+  /* .aboutus-image-right img {
+    height: 400px;
+    width: 300px;
+  } */
+}
+
+/*bharat section styling done*/
+
+/* ashutosh's css starts from here */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+  .types {
+    gap: 20px;
+  }
+}
+.first_container {
+  align-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.types {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.fruits {
+  position: relative;
+  width: 314px;
+  /* Adjust based on your image size or preference */
+  height: 234px;
+  /* Adjust based on your image size or preference */
+  border-radius: 14px;
+}
+.fruits img {
+  display: flex;
+  width: 314px;
+  height: 234px;
+  border-radius: 14px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  /* Adjust as necessary */
+  left: 0;
+  /* Adjust as necessary */
+  width: 100%;
+  /* This makes the overlay cover the whole image */
+  height: 100%;
+  /* This makes the overlay cover the whole image */
+  display: flex;
+  justify-content: center;
+  /* Center the text horizontally */
+  align-items: center;
+  /* Center the text vertically */
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.5s ease;
+}
+.fruits:hover img {
+  transform: scale(1.1);
+}
+.fruits:hover .overlay {
+  opacity: 1;
+  /* Make the overlay visible on hover */
+}
+.vegetable {
+  position: relative;
+  width: 314px;
+  /* Adjust based on your image size or preference */
+  height: 234px;
+  /* Adjust based on your image size or preference */
+  border-radius: 14px;
+}
+.vegetable img {
+  display: flex;
+  width: 314px;
+  height: 234px;
+  border-radius: 14px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.veg {
+  position: absolute;
+  top: 0;
+  /* Adjust as necessary */
+  left: 0;
+  /* Adjust as necessary */
+  width: 100%;
+  /* This makes the overlay cover the whole image */
+  height: 100%;
+  /* This makes the overlay cover the whole image */
+  display: flex;
+  justify-content: center;
+  /* Center the text horizontally */
+  align-items: center;
+  /* Center the text vertically */
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.5s ease;
+}
+.vegetable:hover img {
+  transform: scale(1.1);
+}
+.vegetable:hover .veg {
+  opacity: 1;
+}
+.cereals {
+  position: relative;
+  width: 314px;
+  /* Adjust based on your image size or preference */
+  height: 234px;
+  /* Adjust based on your image size or preference */
+  border-radius: 14px;
+}
+.cereals img {
+  display: flex;
+  width: 314px;
+  height: 234px;
+  border-radius: 14px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.cer {
+  position: absolute;
+  top: 0;
+  /* Adjust as necessary */
+  left: 0;
+  /* Adjust as necessary */
+  width: 100%;
+  /* This makes the overlay cover the whole image */
+  height: 100%;
+  /* This makes the overlay cover the whole image */
+  display: flex;
+  justify-content: center;
+  /* Center the text horizontally */
+  align-items: center;
+  /* Center the text vertically */
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.5s ease;
+}
+.cereals:hover img {
+  transform: scale(1.1);
+}
+.cereals:hover .cer {
+  opacity: 1;
+}
+.food_menu {
+  text-align: center;
+  color: gray;
+}
+.menu {
+  margin-left: 14px;
+  text-align: center;
+}
+.food1 {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 990px; */
+  /* height: 255.333px; */
+}
+.food1 img {
+  border-radius: 888px;
+  width: 190px;
+  height: 236.9px;
+}
+
+.food2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* width: 1263px;
+height: 255.333px; */
+}
+.food2 img {
+  border-radius: 888px;
+  width: 190px;
+  height: 236.9px;
+}
+.food3 {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 1263px;
+height: 255.333px; */
+}
+.food3 img {
+  border-radius: 888px;
+  width: 190px;
+  height: 236.9px;
+}
+.food4 {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 1263px;
+height: 255.333px; */
+}
+.food4 img {
+  border-radius: 888px;
+  width: 190px;
+
+  height: 236.9px;
+}
+.detail {
+  margin-top: 30px;
+
+  text-align: center;
+  /* width: 306.133px;
+  height: 226.9px; */
+}
+.price {
+  color: green;
+}
+.about1 {
+  color: gray;
+  width: 373px;
+}
+
+.food_type {
+  text-align: center;
+  color: gray;
+  margin: auto;
+}
+/*ashutosh section styling done*/
+
+/*ashutosh section styling done*/
+
+/* Dapinder's css starts from here */
+#testimonials {
+  padding: 5rem 0;
+  background: rgba(243, 243, 243);
+}
+
+#testimonials h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.testimonial {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.rating {
+  color: #ff9529;
+}
+
+.testimonial p {
+  margin: 1rem 0;
+  color: #444;
+}
+
+/* Contact Us Section */
+#contact {
+  padding: 5rem 0;
+  background: rgb(226, 226, 226);
+}
+
+#contact .container {
+  display: flex;
+  background: #fff;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.form {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+.form a {
+  font-size: 1.3rem;
+}
+
+/* Footer Section */
+#footer {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+}
+
+/*Dapinder section styling done*/
+
+/*Dapinder section styling done*/
